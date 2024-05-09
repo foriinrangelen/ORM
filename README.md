@@ -1,5 +1,4 @@
 # ORM
-<div><img src="https://github.com/foriinrangelen/ORM/assets/123726292/234bf0b3-e29a-4855-ba5f-bee0336db5e3" alt="image" style="width: 300px; height: 300px;"></div>
 
 ### ORM (Object Relational Mapping) 이란?
 > 객체와 관계형 데이터베이스의 데이터를 자동으로 변형 및 연결하는 작업이며 ORM을 이용한 개발은 객체와 데이터베이스의 변형에 유연하게 사용할 수있게 해준다
