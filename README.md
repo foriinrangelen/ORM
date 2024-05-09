@@ -51,6 +51,8 @@ TypeORM은 node.js에서 실행되고 TypeScript로 작성된 객체 관계형 m
 4. 간단한 CLI 명령을 제공
 #### TypeORM 사용해보기
 1. 프로젝트 폴더 생성
-2. `npm init`
-3. 
+2. **`npm init`**
+3. **`npx tsc --init`**
+4. **`npm install morgan nodemon express`**
+5. **`npm install typescript ts-node @types/node @types/express @types/morgan --save-dev`**
 
