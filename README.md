@@ -1,9 +1,11 @@
 # ORM
+<div><img src="https://github.com/foriinrangelen/ORM/assets/123726292/234bf0b3-e29a-4855-ba5f-bee0336db5e3" alt="image" style="width: 300px; height: 300px;"></div>
+
 ### ORM (Object Relational Mapping) 이란?
 > 객체와 관계형 데이터베이스의 데이터를 자동으로 변형 및 연결하는 작업이며 ORM을 이용한 개발은 객체와 데이터베이스의 변형에 유연하게 사용할 수있게 해준다
 > MongoDB에서 mongoose(ODM)을 사용했던 것처럼 RDBMS에서는 ORM을 사용한다
 객체지향 프로그래밍에서는 클래스를 사용하고, RDBMS는 Table을 사용하기 때문에 **객체모델과 관계모델이 불일치하는 문제를 ORM이 Mapping해준다**
-<div><img src="https://github.com/foriinrangelen/ORM/assets/123726292/234bf0b3-e29a-4855-ba5f-bee0336db5e3" alt="image" style="width: 300px; height: 300px;"></div>
+
 
 ### ORM vs Pure JavaScript ( 차이 비교해보기 )
 #### ORM
@@ -40,4 +42,15 @@ db.query(`SELECT * FROM boards WHERE title="Hello" AND status="PUBLIC",(err, res
 4. 모델 유효성 검사 지원
 5. TypeScript 지원
 
+### TypeORM 알아보기
+TypeORM은 node.js에서 실행되고 TypeScript로 작성된 객체 관계형 mapper 라이브러리
+#### TypeORM 특징
+1. 모델기반으로 데이터베이스 테이블 체계를 자동으로 생성
+2. 데이터베이스의 개체를 쉽게 CRUD 가능
+3. 테이블간의 매핑(일대일, 일대다 및 다대다)를 만듦
+4. 간단한 CLI 명령을 제공
+#### TypeORM 사용해보기
+1. 프로젝트 폴더 생성
+2. `npm init`
+3. 
 
