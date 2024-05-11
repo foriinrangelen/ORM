@@ -94,3 +94,27 @@ TypeORM을 사용하기위한 파일들 생성 (data-source.ts, entity, migratio
     <img src="https://github.com/foriinrangelen/ORM/assets/123726292/b8252e32-cdf0-401a-9727-d692d2ac8b7b" alt="image" style="width: 90%; height: 700px;">
 </div>
 
+### 윈도우에서 Docker 설치하기 / Docker 이용해서 Postgres 설치&실행하기
+1. **`https://www.docker.com/`** > **get started**
+2. src 폴더 내에 **`docker-compose.yml`** 파일 생성
+3. **`docker-compose.yml`** 파일작성
+#### docker-compose.yml
+```yml
+version: "3"
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_typeorm_container
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "password"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+
+```
+4. docker 실행 후 **`docker-compose.yml`** 파일이있는 디렉토리로 이동 후 명령어 **`docker-compose up`** 실행
+5. docker container 에서 설정해준 username과 password를 `data-source.ts`에서 설정 후 서버실행
+Q. "emitDecoratorMetadata": true,"experimentalDecorators": true, 최상단 import "reflect-metadata"; 확인, 왜 user.ts에서 @Column("text") 을 해주지않으면 에러가 나는가?
