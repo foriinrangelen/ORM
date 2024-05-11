@@ -61,33 +61,36 @@ nodeJS에서 사용되는 로그 관리를 위한 미들웨어
 #### types/express @types/node
 Express 및 NodeJS에 대한 Type정의에 도움
 
-#### package.json
+### express 앱에 typeorm을 이용한 데이터베이스 연결하기
+1. **`npm i pg typeorm reflect-metadata --save`**
+2. **`npx typeorm init`**
+#### pg
+PostgreSQL 데이터베이스와 인터페이스하기 위한 NodeJS모듈 모음(DB드라이버)
+#### typeorm
+TypeScript 및 JacaScript와 함께 사용할 수 있는 NodeJS에서 실행되는 ORM
+#### reflect-metadata
+데코레이터를 사용하기 위해서 필요한 모듈
+#### npx typeorm init
+TypeORM을 사용하기위한 파일들 생성 (data-source.ts, entity, migration etc..)
+
+<div>
+    <img src="https://github.com/foriinrangelen/ORM/assets/123726292/a6e31eb9-b670-4204-a876-9268a561d6bd" alt="image" style="width: 500px; height: 400px;">
+    <img src="https://github.com/foriinrangelen/ORM/assets/123726292/9963e450-976e-4e27-b386-4776f7f205f9" alt="image" style="width: 500px; height: 250px;">
+</div>
+
+### package.json
 ```json
-{
-  "name": "typeorm-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx src/index.ts",
     "dev": "nodemon --exec tsx src/index.ts"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.0"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/morgan": "^1.9.9",
-    "@types/node": "^20.12.11",
-    "tsx": "^4.9.5",
-    "typescript": "^5.4.5"
-  }
-}
-
 ```
+
+<div>
+    <img src="https://github.com/foriinrangelen/ORM/assets/123726292/300bed04-ea9e-4e7c-b98a-da738122b5e6" alt="image" style="width: 90%; height: 700px;">
+</div>
+<div>
+    <img src="https://github.com/foriinrangelen/ORM/assets/123726292/b8252e32-cdf0-401a-9727-d692d2ac8b7b" alt="image" style="width: 90%; height: 700px;">
+</div>
 
