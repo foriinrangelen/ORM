@@ -53,5 +53,5 @@ TypeORM은 node.js에서 실행되고 TypeScript로 작성된 객체 관계형 m
 2. **`npm init`**
 3. **`npx tsc --init`**
 4. **`npm install morgan nodemon express`**
-5. **`npm install typescript ts-node @types/node @types/express @types/morgan --save-dev`**
+5. **`npm install typescript tsx @types/node @types/express @types/morgan --save-dev`**(ts-node는 node가 LTS 20번대로 올라오면서 정상작동하지않음, tsx로 변경)
 
