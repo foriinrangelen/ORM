@@ -118,3 +118,19 @@ services:
 4. docker 실행 후 **`docker-compose.yml`** 파일이있는 디렉토리로 이동 후 명령어 **`docker-compose up`** 실행
 5. docker container 에서 설정해준 username과 password를 `data-source.ts`에서 설정 후 서버실행
 Q. "emitDecoratorMetadata": true,"experimentalDecorators": true, 최상단 import "reflect-metadata"; 확인, 왜 user.ts에서 @Column("text") 을 해주지않으면 에러가 나는가?
+
+### pgAdmin 사용해보기
+pgAdmin? - 데이터베이스를 보는 툴
+#### 1. Window에서 PostgresSQL 설치하기 (Docker없이 설치하려면!)
+`http://www.postgresql.org/download/windows/`
+#### 2. Window & Mac에서 pgAdmin 설치하기
+`https://pgadmin.org/download`
+
+![image](https://github.com/foriinrangelen/ORM/assets/123726292/c049ae20-dc66-4321-a28b-ef5b008d3760)
+![image](https://github.com/foriinrangelen/ORM/assets/123726292/5d536473-a9be-45d7-8dff-6779d60639ea)
+
+
+
+
+
+
